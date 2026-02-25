@@ -9,7 +9,6 @@ export const categories: Category[] = [
 ];
 
 export const productsList: Product[] = [
-  /* ================= CATEGORY 1: SMARTPHONES ================= */
   {
     id: 1, categoryId: 1, likes: 0,
     name: 'iPhone 15 Pro',
@@ -76,7 +75,6 @@ export const productsList: Product[] = [
     link: 'https://kaspi.kz/shop/p/oneplus-12-16-512gb-zelenyi-116345453/'
   },
 
-  /* ================= CATEGORY 2: LAPTOPS ================= */
   {
     id: 6, categoryId: 2, likes: 0,
     name: 'MacBook Air M3',
@@ -143,7 +141,7 @@ export const productsList: Product[] = [
     link: 'https://kaspi.kz/shop/p/hp-spectre-x360-14-107050011/'
   },
 
-  /* ================= CATEGORY 3: HEADPHONES ================= */
+
   {
     id: 11, categoryId: 3, likes: 0,
     name: 'AirPods Pro 2',
@@ -210,7 +208,7 @@ export const productsList: Product[] = [
     link: 'https://kaspi.kz/shop/p/beats-studio-pro-chernyi-112282494/'
   },
 
-  /* ================= CATEGORY 4: TABLETS ================= */
+
   {
     id: 16, categoryId: 4, likes: 0,
     name: 'iPad Pro M2',

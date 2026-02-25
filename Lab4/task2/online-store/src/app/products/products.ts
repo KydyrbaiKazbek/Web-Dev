@@ -11,7 +11,5 @@ import { Product } from '../product.model';
   styleUrl: './products.css'
 })
 export class ProductsComponent {
-  // Ескі тауарларды өшірдік. Енді бұл файл бос тұрады.
-  // Тауарлар products-data.ts файлынан алынады.
-  products: Product[] = []; 
+  products: Product[] = [];
 }

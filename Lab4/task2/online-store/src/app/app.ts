@@ -21,7 +21,6 @@ export class App {
     this.selectedCategory = category;
   }
 
-  // Таңдалған категорияның тауарларын ғана қайтаратын функция
   get filteredProducts(): Product[] {
     if (!this.selectedCategory) return [];
     return this.allProducts.filter(p => p.categoryId === this.selectedCategory?.id);

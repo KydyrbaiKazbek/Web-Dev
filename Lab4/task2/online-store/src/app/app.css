@@ -1,6 +1,3 @@
-/* ============================================
-   ТОЛЫҚ STORE CSS — Бағалар түзетілді + Қазақша шрифт
-   ============================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap');
 
@@ -39,7 +36,6 @@ header h2 {
   font-weight: 800;
   letter-spacing: -0.3px;
   color: #fff;
-  /* Градиент ЖОҚ — қазақша таңбалар үшін қарапайым ақ түс */
 }
 
 header p {
@@ -48,7 +44,7 @@ header p {
   font-size: 14px;
 }
 
-/* ── Негізгі контейнер ── */
+
 .store,
 .products-container {
   max-width: 1400px;
@@ -56,7 +52,6 @@ header p {
   padding: 0 28px 60px;
 }
 
-/* ── Категория фильтрлері ── */
 .category-filter {
   display: flex;
   flex-wrap: wrap;
@@ -98,7 +93,6 @@ header p {
   transform: translateY(-2px);
 }
 
-/* ── Өнімдер торы ── */
 .product-grid,
 .products-grid {
   display: grid;
@@ -106,7 +100,6 @@ header p {
   gap: 28px;
 }
 
-/* ── Өнім карточкасы ── */
 .product-card {
   background: rgba(255, 255, 255, 0.07);
   backdrop-filter: blur(20px);
@@ -123,7 +116,7 @@ header p {
   flex-direction: column;
 }
 
-/* Жарқыраған жоғарғы сызық */
+
 .product-card::before {
   content: '';
   position: absolute;
@@ -151,7 +144,6 @@ header p {
   border-color: rgba(255, 107, 107, 0.3);
 }
 
-/* ── Сурет контейнері ── */
 .image-container {
   text-align: center;
   height: 220px;
@@ -182,7 +174,7 @@ header p {
   transform: scale(1.07) translateY(-4px);
 }
 
-/* ── Галерея ── */
+
 .gallery {
   display: flex;
   gap: 8px;
@@ -213,7 +205,7 @@ header p {
   box-shadow: 0 0 12px rgba(255, 107, 107, 0.5);
 }
 
-/* ── Өнім мәліметі ── */
+
 .product-info,
 .product-card > div:not(.image-container):not(.gallery):not(.actions) {
   padding: 18px 20px 0;
@@ -226,11 +218,11 @@ header p {
   font-size: 17px;
   font-weight: 700;
   margin-bottom: 8px;
-  color: #ffffff;   /* ← қарапайым ақ, градиент емес */
+  color: #ffffff;
   line-height: 1.35;
 }
 
-/* ── Рейтинг ── */
+
 .rating,
 .stars {
   color: #feca57;
@@ -238,19 +230,19 @@ header p {
   margin-bottom: 8px;
 }
 
-/* ── БАҒА — ең маңызды түзету ── */
+
 .price {
   font-family: 'Montserrat', 'Segoe UI', sans-serif;
   font-size: 24px;
   font-weight: 800;
-  color: #ffffff !important;                   /* ← міндетті түрде ақ */
-  -webkit-text-fill-color: #ffffff !important; /* ← градиент override */
-  background: none !important;                 /* ← gradient жою */
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background: none !important;
   margin: 10px 0;
   letter-spacing: -0.3px;
 }
 
-/* ── Лайк ── */
+
 .likes-count {
   color: #ff6b6b;
   font-weight: 600;
@@ -261,7 +253,7 @@ header p {
   gap: 4px;
 }
 
-/* ── Сипаттама ── */
+
 .description {
   color: rgba(255, 255, 255, 0.5);
   font-size: 13px;
@@ -269,7 +261,7 @@ header p {
   margin-bottom: 4px;
 }
 
-/* ── Батырмалар ── */
+
 .actions {
   display: flex;
   flex-direction: column;
@@ -301,7 +293,7 @@ header p {
   color: #fff;
 }
 
-/* Kaspi батырмасы */
+
 .kaspi-btn,
 .btn-buy {
   flex: 1;
@@ -330,7 +322,7 @@ header p {
   filter: brightness(1.1);
 }
 
-/* Лайк батырмасы */
+
 .like-btn {
   background: rgba(255, 255, 255, 0.08);
   color: #fff !important;
@@ -348,7 +340,7 @@ header p {
   background: rgba(255, 255, 255, 0.15);
 }
 
-/* Өшіру батырмасы */
+
 .delete-btn {
   background: rgba(255, 77, 77, 0.15);
   color: #ff6b6b !important;
@@ -369,7 +361,7 @@ header p {
   box-shadow: 0 8px 20px rgba(255, 77, 77, 0.4);
 }
 
-/* WhatsApp */
+
 .wa-btn,
 .btn-share {
   background: linear-gradient(135deg, #25D366, #128C7E);
@@ -396,7 +388,7 @@ header p {
   box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
 }
 
-/* Telegram */
+
 .tg-btn {
   background: linear-gradient(135deg, #0088cc, #0066aa);
   color: white !important;
@@ -421,7 +413,7 @@ header p {
   box-shadow: 0 8px 25px rgba(0, 136, 204, 0.5);
 }
 
-/* ── Бос хабарлама ── */
+
 .empty-message {
   grid-column: 1 / -1;
   text-align: center;
@@ -440,7 +432,7 @@ header p {
   margin-bottom: 16px;
 }
 
-/* ── Карточка анимациясы ── */
+
 @keyframes cardFadeIn {
   from { opacity: 0; transform: translateY(30px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -463,7 +455,7 @@ header p {
 .product-grid .product-card:nth-child(6),
 .products-grid .product-card:nth-child(6) { animation-delay: 0.40s; }
 
-/* ── Scrollbar ── */
+
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); }
 ::-webkit-scrollbar-thumb {
@@ -471,7 +463,7 @@ header p {
   border-radius: 3px;
 }
 
-/* ── Responsive ── */
+
 @media (max-width: 768px) {
   .store, .products-container { padding: 0 16px 40px; }
 
