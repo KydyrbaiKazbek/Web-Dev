@@ -4,8 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const taskList = document.getElementById("taskList");
     function addTask() {
         const taskText = taskInput.value.trim();
-        if (taskText === "") return;
-
+        const isUrgent = confirm("The task is urgent. Yes/No?");
         const li = document.createElement("li");
         const checkbox = document.createElement("input");
         checkbox.type = "checkbox";
@@ -16,6 +15,10 @@ document.addEventListener("DOMContentLoaded", function() {
         const span = document.createElement("span");
         span.textContent = taskText;
 
+        if(isUrgent) {
+            span.style.color = "red";
+        }
+
         const deleteBtn = document.createElement("button");
         deleteBtn.innerHTML = "🗑";
         deleteBtn.classList.add("delete-btn");
@@ -25,7 +28,11 @@ document.addEventListener("DOMContentLoaded", function() {
         li.appendChild(checkbox);
         li.appendChild(span);
         li.appendChild(deleteBtn);
-        taskList.appendChild(li);
+        if (isUrgent) {
+            taskList.prepend(li);
+        }else{
+            taskList.appendChild(li);
+        }
 
         taskInput.value = "";
     }
