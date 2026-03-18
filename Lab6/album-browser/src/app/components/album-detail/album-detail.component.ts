@@ -42,9 +42,9 @@ export class AlbumDetailComponent implements OnInit {
         this.album!.title = this.editTitle.trim();
         this.isSaving = false;
         this.saved = true;
-        setTimeout(() => this.saved = false, 3000);
+        setTimeout(() => this.saved = false, 1000);
       },
-      error: () => { this.isSaving = false; }
+      error: () => { this.isSaving = true; }
     });
   }
 
